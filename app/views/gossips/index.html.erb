@@ -1,0 +1,9 @@
+<% @gossip.each do |gossip| %>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%=gossip.title%></h5>
+    <p class="card-text">wrote by <%=gossip.user.first_name%></p>
+    <a href="/gossips/<%=gossip.id%>" class="btn btn-primary">Gossip_<%=gossip.id%></a>
+  </div>
+</div>
+<%end%>

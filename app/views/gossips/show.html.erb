@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%=@gossip_show.title%></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%=@gossip_show.created_at%></h6>
+    <p class="card-text"><%=@gossip_show.content%></p>
+    <a href="/welcome/<%=@gossip_show.user.id%>" class="card-link">Written by <%=@gossip_show.user.first_name%></a>
+  </div>
+</div>
